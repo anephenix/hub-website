@@ -17,7 +17,7 @@ const HomePage = () => (
 	<div style={{ marginTop: '40px' }}>
 		<div className="hero">
 			<div className="heading-and-lead">
-				<h1>A Realtime framework for Node.js</h1>
+				<h1>A Realtime framework</h1>
 				<p>Built for Anephenix</p>
 			</div>
 			<div className="hero-ctas">{ctas.map(CTA)}</div>
