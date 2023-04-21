@@ -1,9 +1,12 @@
 import App from 'next/app';
 import React from 'react';
 import Head from 'next/head';
-import { Theme, NavBar, Page } from '@anephenix/ui';
+import Link from 'next/link';
+import { NavBar, Page } from '@anephenix/ui';
 import Footer from '../src/components/footer/Footer';
 import Logo from '../src/components/logo/Logo';
+import '@anephenix/ui/dist/index.css';
+import '../styles/index.scss';
 
 // Data
 import links from '../data/navbar-links';
@@ -20,15 +23,18 @@ class MyApp extends App {
 					/>
 					<title>Hub - A realtime framework</title>
 				</Head>
-				<Theme>
-					<Page>
-						<NavBar logo={<Logo />} links={links} loggedIn={false} />
-						<div className="page container withSidePadding">
-							<Component {...pageProps} />
-						</div>
-						<Footer />
-					</Page>
-				</Theme>
+				<Page>
+					<NavBar
+						logo={<Logo />}
+						links={links}
+						loggedIn={false}
+						Link={Link}
+					/>
+					<div className="page container withSidePadding">
+						<Component {...pageProps} />
+					</div>
+					<Footer />
+				</Page>
 			</>
 		);
 	}

@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import '../styles/index.scss';
 
 const ctas = [
 	{ href: '/get-started', text: 'Get started', buttonClass: 'primary' },
@@ -8,8 +7,8 @@ const ctas = [
 ];
 
 const CTA = ({ href, text, buttonClass }, i) => (
-	<Link key={i} href={href}>
-		<a className={`button theme-default ${buttonClass}`}>{text}</a>
+	<Link key={i} href={href} className={`button theme-default ${buttonClass}`}>
+		{text}
 	</Link>
 );
 

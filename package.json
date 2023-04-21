@@ -1,24 +1,25 @@
 {
-  "name": "hub-website",
-  "version": "1.0.0",
-  "description": "THe website for Hub",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "hub"
-  ],
-  "author": "Paul Jensen <paul@anephenix.com>",
-  "license": "MIT",
-  "dependencies": {
-    "@anephenix/ui": "0.0.24",
-    "@zeit/next-sass": "^1.0.1",
-    "next": "^10.0.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  },
-  "devDependencies": {
-    "@anephenix/rcg": "0.0.9"
-  }
+	"name": "hub-website",
+	"version": "1.0.0",
+	"description": "THe website for Hub",
+	"main": "index.js",
+	"scripts": {
+		"dev": "next",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"hub"
+	],
+	"author": "Paul Jensen <paul@anephenix.com>",
+	"license": "MIT",
+	"dependencies": {
+		"@anephenix/ui": "0.1.0",
+		"next": "^13.3.0",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"sass": "^1.62.0"
+	},
+	"devDependencies": {
+		"@anephenix/rcg": "0.0.11"
+	}
 }
