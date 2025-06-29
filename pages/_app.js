@@ -21,6 +21,7 @@ class MyApp extends App {
 						name="viewport"
 						content="initial-scale=1.0, width=device-width"
 					/>
+					<script defer data-domain="hub.anephenix.com" src="https://plausible.io/js/script.js" />
 					<title>Hub - A realtime framework</title>
 				</Head>
 				<Page>
